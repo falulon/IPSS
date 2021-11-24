@@ -43,7 +43,7 @@ const IpssProvider = ({ children }) => {
   };
 
   const todayDate = () => {
-    return format(new Date(), "yyyy-MM-dd h:mm aa");
+    return format(new Date(), "MM-dd-yyyy h:mm aa");
   };
 
   const newQuestionnaire = () => {
