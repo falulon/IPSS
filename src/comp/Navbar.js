@@ -60,14 +60,19 @@ const Wrapper = styled.nav`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  
   h4 {
     font-weight: 400;
+    font-size: 1rem;
+    margin-right: 10px;
+
   }
   img {
-    width: 35px !important;
-    height: 35px;
+    width: 25px !important;
+    height: 25px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 10px;
   }
   button {
     background: transparent;
@@ -75,15 +80,18 @@ const Wrapper = styled.nav`
     font-size: 0.8rem;
     text-transform: capitalize;
     cursor: pointer;
+    
   }
   .link {
     display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
+  
 }
 
 .link a { 
-color: gray;
+  
+color: #379ee4;
 text-decoration: none;
 text-transform: capitalize;
 font-size: 1rem;
@@ -92,7 +100,9 @@ font-size: 1rem;
 
 .user-links { 
   display: grid;
-  grid-template-columns: auto auto 100px;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 20px;
 }
 `;
 

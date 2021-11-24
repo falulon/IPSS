@@ -42,7 +42,7 @@ const ShowPastQuestionnaires = () => {
 
     <div>
          {pastQuestExists && <ShowPastItems pastQuest={pastQuest} erased={erasedItems} />}
-      {nothingToDisplay && <div className='mt container center'>NO Previous IPSS Questionnaires found. Please Try again.</div>}
+      {nothingToDisplay && <div className='mt container center'>No Previous IPSS Questionnaires Found. Please Try again.</div>}
     </div>
   );
 };

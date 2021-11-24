@@ -9,7 +9,7 @@ const Login = () => {
 
   return (
     <Wrapper>
-      <div className='container'>
+      <div className='login-container'>
         <img src={loginImg} alt='user' />
         <h1>IPSSment</h1>
         <button className='btn' onClick={loginWithRedirect}>
@@ -24,9 +24,9 @@ const Wrapper = styled.section`
   min-height: 80vh;
   display: grid;
   place-items: center;
-  .container {
+  .login-container {
     width: 90vw;
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
   }
   img {
