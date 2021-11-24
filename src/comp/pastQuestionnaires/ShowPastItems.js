@@ -29,7 +29,7 @@ const ShowPastItems = ({ pastQuest }) => {
     setChartData(
       pastQuest.map((item) => {
         const { date, score } = item;
-        return { label: date.slice(5, 10), value: score, tooltext: `Date: ${date} {br} Score: ${score}` };
+        return { label: date.slice(0, 5), value: score, tooltext: `Date: ${date} {br} Score: ${score}` };
       })
     );
   }, [pastQuest]);
