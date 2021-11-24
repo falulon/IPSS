@@ -1,38 +1,205 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+nav { 
+  background:rgba(234, 245, 248, 0.3);
+}
+
+article {
+  height:100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding-top: auto;
+  margin: auto auto;
+  /* padding-top: 30vh; */
+  min-height: 60vh;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+
 .App {
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.q-number { 
+font-size: 1.2rem;
+color: hsla(237, 100%, 7%, 0.99);
+text-align: right;
+margin-top: 0%
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link-text {
+  border: 1px black solid;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.App-header {
+.btn {
+  display: flex;
+  text-align: center;
+  font-size: 1.5rem;
+  background: #379ee4;
+  border-color: white;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.container {
+  margin: 20px auto;
+  padding: 0 10vw;
+  max-width: 800px;
+}
+
+.heading {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(18px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.radio label {
+  color: #282c11;
+}
+.radio {
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radio:hover,
+.radio:focus-within {
+  background: hsla(0, 0%, 80%, 0.14);
+}
+
+.completed-questionnaire {
+  display: flex;
+  max-width: 50vw;
+  margin: 20px auto;
+  column-gap: 3rem;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.questionnaire-item {
+  display: flex;
+  width: 30%;
+  margin-top: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  align-items: center;
+}
+
+p.questionnaire-item {
+  justify-content: center;
+}
+
+.results {
+  margin: 20px auto;
+  border-radius: 15px;
+
+  padding: 20px;
+  text-align: center;
+  align-self: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.results-qol {
+ font-size: 0.8rem;
+ 
+}
+
+.success,
+.Mild,
+.results-qol-0,
+.results-qol-1 {
+  text-align: center;
+  background: #fdd700;
+}
+
+.past-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  justify-content: center;
+  gap: 40px;
+}
+
+.pastQuest {
+  color: white;
+  text-align: center;
+  background: #006e8a9a;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: zoom-in;
+}
+
+.information,
+.Moderate,
+.results-qol-2,
+.results-qol-3,
+.results-qol-4 {
+  text-align: center;
+  background: #fd8c00;
+  color: black;
+}
+
+.error,
+.Severe,
+.results-qol-5,
+.results-qol-6 {
+  text-align: center;
+  background: #dc0000;
+}
+
+.mt {
+  margin-top: 3rem;
+}
+
+.right {
+  display: block;
+  margin: 20px auto;
+    
+}
+
+.center { 
+text-align: center;  
+}
+.rounded {
+  border-radius: 10px;
+  width: 30%;
+}
+
+.progress-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.chart-container, .fusioncharts-container {
+  text-align: center;
+  width: 90%!important;
+  margin: 20px auto;
+  max-height: 600px;
+}
+
+.hide {
+  display: none;
 }
