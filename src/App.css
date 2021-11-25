@@ -88,24 +88,32 @@ margin-top: 0%
 
 .completed-questionnaire {
   display: flex;
-  max-width: 50vw;
   margin: 20px auto;
   column-gap: 3rem;
   align-items: stretch;
   align-content: space-between;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.rounded {
+  border-radius: 10px;
+  width: 30%;
 }
 
 .questionnaire-item {
   display: flex;
-  width: 30%;
   margin-top: 10px;
   padding: 10px;
-  flex-grow: 1;
   align-items: center;
+  min-width: 50px;
+  width: auto;
+  flex-grow: 1;
 }
 
 p.questionnaire-item {
+  
+  max-width: 40%;
   justify-content: center;
 }
 
@@ -179,10 +187,6 @@ p.questionnaire-item {
 
 .center { 
 text-align: center;  
-}
-.rounded {
-  border-radius: 10px;
-  width: 30%;
 }
 
 .progress-icon {
