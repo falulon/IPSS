@@ -15,7 +15,7 @@ const ShowAnswers = ({ answers }) => {
           <p className={`rounded questionnaire-item label results-qol-${answer}`}>
             {label}
           </p>
-          <p className={`rounded questionnaire-item results-qol-${answer}`}>
+          <p className={`rounded questionnaire-item questionnaire-item-qol results-qol-${answer}`}>
             {answer}
           </p>
         </div>

@@ -92,7 +92,7 @@ margin-top: 0%
   column-gap: 3rem;
   align-items: stretch;
   align-content: space-between;
-  justify-content: space-around;
+  justify-content: end;
   flex-wrap: wrap;
 
 }
@@ -112,9 +112,12 @@ margin-top: 0%
 }
 
 p.questionnaire-item {
-  
-  max-width: 40%;
-  justify-content: center;
+   justify-content: center;
+   flex-grow: 2;
+
+}
+.questionnaire-item-qol { 
+  max-width: 60px;
 }
 
 .results {
